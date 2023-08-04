@@ -24,59 +24,6 @@ Input: 23:59  Output: It's eleven fifty nine pm
 Input: 12:05  Output: It's twelve oh five pm
 """
 
-
-
-
-    # This will convert military hours to regular hours, and determine AM vs PM
-  
-class Solution:
-    def ClockTalker(self, input_time):
-        numbers = {0: 'zero', 1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six', 7: 'seven', 8: 'eight', 9: 'nine'}
-        tens = {0: 'ten', 1: 'eleven', 2: 'twelve', 3: 'thirteen', 4: 'fourteen', 5: 'fifteen', 6: 'sixteen', 7: 'seventeen', 8: 'eighteen', 9: 'nineteen'}
-        tens_words = {2: 'twenty', 3: 'thirty', 4: 'forty', 5: 'fifty', 6: 'sixty', 7: 'seventy', 8: 'eighty', 9: 'ninety'}
-        am_pm = {'am': 'am', 'pm': 'pm'}
-        hours, minutes = input_time.split(':')
-        if hours == '12':
-            hours = '12'
-            am_pm_str = 'pm'
-        elif hours == '00':
-            hours = '12'
-            am_pm_str = 'am'
-        elif int(hours) > 12:
-            hours = str(int(hours) - 12)
-            am_pm_str = 'pm'
-        else:
-            am_pm_str = 'am'
-        int(hours)
-        int(minutes)
-        answer = "It's" ""
-def main():
-     str1=input()"""
-Copyright MIT BWSI Autonomous RACECAR Course
-MIT License
-Summer 2023
-
-Code Clash #18 - Talking Clock (talkingclock.py)
-
-
-Author: Andrew Scott White
-
-Difficulty Level: 8/10
-
-Prompt: I don’t want to be late for the BWSI Grand Prix, so I want
-to program my phone to update me on the time. Can you help me make 
-a Talking Clock? I need a script that takes an input 24-hour time 
-(00:00 - 23:59) and translates it into words. Please format the input 
-as ‘##:##’ and include am/pm in the output string. Thanks!
-
-Test Cases:
-Input: 12:00  Output: It's twelve pm
-
-Input: 23:59  Output: It's eleven fifty nine pm
-
-Input: 12:05  Output: It's twelve oh five pm
-"""
-
 # This will convert military hours to regular hours, and determine AM vs PM
 
 reg_tens = {2:"twenty",3:"thirty",4:"forty",5:"fifty"}
@@ -120,10 +67,3 @@ def main():
     
 if __name__ == '__main__': 
     main()
-     tc1= Solution()
-     ans=tc1.ClockTalker(str1)
-     print(ans)
-    
-if __name__ == '__main__': 
-    main()
-        
